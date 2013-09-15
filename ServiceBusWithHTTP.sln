@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "ServiceBusWithHTTP", "ServiceBusWithHTTP\ServiceBusWithHTTP.oxygene", "{91FBC251-6D21-431D-A3E4-05CCE979612A}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.oxygene", "{C4D5BF7B-CFAF-4E4D-86BB-645380036DD1}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "ServiceBus.Messages", "ServiceBus.Messages\ServiceBus.Messages.oxygene", "{4B8DCC3C-ABA8-416C-8A06-F0506DA98842}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91FBC251-6D21-431D-A3E4-05CCE979612A}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{91FBC251-6D21-431D-A3E4-05CCE979612A}.Debug|Mixed Platforms.Build.0 = Debug
+		{91FBC251-6D21-431D-A3E4-05CCE979612A}.Release|Mixed Platforms.ActiveCfg = Release
+		{91FBC251-6D21-431D-A3E4-05CCE979612A}.Release|Mixed Platforms.Build.0 = Release
+		{C4D5BF7B-CFAF-4E4D-86BB-645380036DD1}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{C4D5BF7B-CFAF-4E4D-86BB-645380036DD1}.Debug|Mixed Platforms.Build.0 = Debug
+		{C4D5BF7B-CFAF-4E4D-86BB-645380036DD1}.Release|Mixed Platforms.ActiveCfg = Release
+		{C4D5BF7B-CFAF-4E4D-86BB-645380036DD1}.Release|Mixed Platforms.Build.0 = Release
+		{4B8DCC3C-ABA8-416C-8A06-F0506DA98842}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{4B8DCC3C-ABA8-416C-8A06-F0506DA98842}.Debug|Mixed Platforms.Build.0 = Debug
+		{4B8DCC3C-ABA8-416C-8A06-F0506DA98842}.Release|Mixed Platforms.ActiveCfg = Release
+		{4B8DCC3C-ABA8-416C-8A06-F0506DA98842}.Release|Mixed Platforms.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
