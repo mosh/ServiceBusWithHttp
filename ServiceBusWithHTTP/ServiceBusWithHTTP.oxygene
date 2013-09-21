@@ -51,6 +51,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
+    <Reference Include="Nancy">
+      <HintPath>..\packages\Nancy.0.20.0\lib\net40\Nancy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nancy.Hosting.Self">
+      <HintPath>..\packages\Nancy.Hosting.Self.0.20.0\lib\net40\Nancy.Hosting.Self.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="NServiceBus">
       <HintPath>..\packages\NServiceBus.Interfaces.4.0.4\lib\net40\NServiceBus.dll</HintPath>
       <Private>True</Private>
@@ -87,8 +95,10 @@
   <ItemGroup>
     <Compile Include="EndpointConfiguration.pas" />
     <Compile Include="Handlers\DomainHandler.pas" />
+    <Compile Include="Modules\ServiceBusModule.pas" />
     <Compile Include="Properties\AssemblyInfo.pas" />
     <Compile Include="Service.pas" />
+    <Compile Include="ServiceBusBootStrapper.pas" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
@@ -100,6 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Handlers" />
+    <Folder Include="Modules" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>

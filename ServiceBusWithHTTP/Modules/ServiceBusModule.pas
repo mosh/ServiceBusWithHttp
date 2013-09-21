@@ -36,7 +36,8 @@ begin
     begin 
       if(assigned(_bus))then
       begin
-        _bus.Send(new DomainMessage);
+        var message := new DomainMessage;                          
+        _bus.Send(message);
       end;
       exit Response.AsJson(new class(), HttpStatusCode.OK);  
     end;
@@ -44,7 +45,8 @@ begin
     begin 
       if(assigned(_bus))then
       begin
-        _bus.Send(new DomainMessage);
+        var message := new DomainMessage;                          
+        _bus.Send(message);
       end;
       exit Response.AsJson(new class(), HttpStatusCode.OK);  
     end;

@@ -3,11 +3,13 @@
 interface
 
 uses
+  System.Reflection,
   NServiceBus,
   System.Collections.Generic,
   System.Linq,
   System.Text, 
-  NServiceBus.Features;
+  NServiceBus.Features, 
+  ServiceBus.Messages;
 
 type
 
@@ -29,10 +31,14 @@ end;
 method EndpointConfiguration.Init;
 begin
 
+    var scanThese := new List<&Assembly> ();
+
+    scanThese.Add(typeOf(DomainMessage).Assembly);
+
     Configure
-    .With
+    .With(scanThese)
     .DefaultBuilder
-    //.UseTransport<RabbitMQ>()
+    .DefiningMessagesAs(t -> assigned(t.Namespace) and t.Namespace.StartsWith('ServiceBus.Messages'))
     .Features
     .Disable<SecondLevelRetries>
     .Disable<TimeoutManager>
